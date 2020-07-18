@@ -1,0 +1,72 @@
+.main{
+  height: 600px;
+  background-color: grey;
+  display: flex;
+  /* direction et allez a la ligne */
+  flex-flow: row wrap;
+  /* espacer les elements */
+  justify-content: space-around;
+  /* arret les element pour qu'il rentre tous stretch    flex-end flex-start center
+  align-content si on plusieur ligne  stretch flex end et srat space bettewen..*/
+  align-items:  center;
+
+}
+
+
+ /* .image:first-child{
+   dans ql ordre en place les elements
+   order: 2;
+   comment l'element doit s'agrandir vis  avis de reste de la page
+}  */
+
+/* .image:nth-child(2){
+  order: 1;
+} */
+
+
+
+
+/* .image{
+   tout sera coler selon le reste de la page il prenne tout l'espace
+  flex-grow: 1;
+}
+.image:first-child{
+  flex-grow: 2;
+} */
+
+
+
+ .image{
+    /* lorsque on palus despace cette element prend moin d'espace */
+  flex-shrink: 1;
+  /* indiqué la base de calcule */
+  /* flex-basis:  50%; */
+}
+ .image:first-child{
+  flex-shrink: 2;
+}
+
+.image:first-child{
+  /* comment l'algner */
+  align-self: flex-end;
+}
+
+.menu{
+  height: 60px;
+  border-color: #EEE;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mosaic{
+  display: flex;
+  height: 100vh;
+  flex-flow: column wrap;
+  align-items: flex-start;
+
+}
+
+.mosaic img{
+  margin: 5px;
+
+}
